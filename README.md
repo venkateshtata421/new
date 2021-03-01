@@ -56,7 +56,7 @@ public void ShouldHaveErrorWhenIntLessThan42()
 
 Validation logic tends to be very "leaky" and you end up calling the same methods over and over again to validate the same set of rules.
 
-By moving buisness rule validation in to the model binding phase request, your controller logic can become a lot simpler.  You know that any invalid request would have been rejected ahead of time.
+By moving buisness rule validation in to the model binding phase of the request, your controller logic can become a lot simpler.  You know that any invalid request would have been rejected ahead of time.
 
 Our create `Foo` controller method is now short and simple:
 
